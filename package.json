@@ -1,0 +1,26 @@
+{
+  "name": "utilities-js",
+  "version": "1.0.0",
+  "description": "Misc Utilities",
+  "main": "cli.js",
+  "scripts": {
+    "postinstall": "node post-install.js"
+  },
+  "repository": "https://mausinator08.visualstudio.com/UtilitiesJS/_git/UtilitiesJS",
+  "author": "John Maus <mauscomp@live.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "yargs": "^16.1.0"
+  },
+  "devDependencies": {},
+  "pkg": {
+    "scripts": [
+      "./**/*.js"
+    ],
+    "assets": [
+      "./jsdoc-config-generator/conf-jsdoc.json"
+    ]
+  },
+  "bin": "./cli.js"
+}

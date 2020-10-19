@@ -1,0 +1,39 @@
+{
+    "plugins": [
+        "plugins/markdown"
+    ],
+    "opts": {
+        "recurse": true,
+        "destination": ".\\docs\\"
+    },
+    "recurseDepth": 10,
+    "source": {
+        "include": [
+            "C:\\Users\\John.Maus\\source\\Workspaces\\Utilities\\cli.js",
+            "C:\\Users\\John.Maus\\source\\Workspaces\\Utilities\\docs\\global_escape-regexp.js.html",
+            "C:\\Users\\John.Maus\\source\\Workspaces\\Utilities\\docs\\global_get-files-recursively.js.html",
+            "C:\\Users\\John.Maus\\source\\Workspaces\\Utilities\\docs\\index.js.html",
+            "C:\\Users\\John.Maus\\source\\Workspaces\\Utilities\\docs\\jsdoc-config-generator_generate-config.js.html",
+            "C:\\Users\\John.Maus\\source\\Workspaces\\Utilities\\docs\\scripts\\linenumber.js",
+            "C:\\Users\\John.Maus\\source\\Workspaces\\Utilities\\docs\\scripts\\prettify\\lang-css.js",
+            "C:\\Users\\John.Maus\\source\\Workspaces\\Utilities\\docs\\scripts\\prettify\\prettify.js",
+            "C:\\Users\\John.Maus\\source\\Workspaces\\Utilities\\global\\escape-regexp.js",
+            "C:\\Users\\John.Maus\\source\\Workspaces\\Utilities\\global\\get-files-recursively.js",
+            "C:\\Users\\John.Maus\\source\\Workspaces\\Utilities\\jsdoc-config-generator\\generate-config.js"
+        ],
+        "includePattern": ".+\\.js(doc|x)?$",
+        "excludePattern": "(^|\\/|\\\\)_"
+    },
+    "sourceType": "module",
+    "tags": {
+        "allowUnknownTags": true,
+        "dictionaries": [
+            "jsdoc",
+            "closure"
+        ]
+    },
+    "templates": {
+        "cleverLinks": false,
+        "monospaceLinks": false
+    }
+}
