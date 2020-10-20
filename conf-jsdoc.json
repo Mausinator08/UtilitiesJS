@@ -3,23 +3,25 @@
         "plugins/markdown"
     ],
     "opts": {
-        "recurse": true,
-        "destination": ".\\docs\\"
+        "recurse": false,
+        "destination": "G:\\Workspaces\\UtilitiesJS\\\\docs"
     },
     "recurseDepth": 10,
     "source": {
         "include": [
-            "C:\\Users\\John.Maus\\source\\Workspaces\\Utilities\\cli.js",
-            "C:\\Users\\John.Maus\\source\\Workspaces\\Utilities\\docs\\global_escape-regexp.js.html",
-            "C:\\Users\\John.Maus\\source\\Workspaces\\Utilities\\docs\\global_get-files-recursively.js.html",
-            "C:\\Users\\John.Maus\\source\\Workspaces\\Utilities\\docs\\index.js.html",
-            "C:\\Users\\John.Maus\\source\\Workspaces\\Utilities\\docs\\jsdoc-config-generator_generate-config.js.html",
-            "C:\\Users\\John.Maus\\source\\Workspaces\\Utilities\\docs\\scripts\\linenumber.js",
-            "C:\\Users\\John.Maus\\source\\Workspaces\\Utilities\\docs\\scripts\\prettify\\lang-css.js",
-            "C:\\Users\\John.Maus\\source\\Workspaces\\Utilities\\docs\\scripts\\prettify\\prettify.js",
-            "C:\\Users\\John.Maus\\source\\Workspaces\\Utilities\\global\\escape-regexp.js",
-            "C:\\Users\\John.Maus\\source\\Workspaces\\Utilities\\global\\get-files-recursively.js",
-            "C:\\Users\\John.Maus\\source\\Workspaces\\Utilities\\jsdoc-config-generator\\generate-config.js"
+            "G:\\Workspaces\\UtilitiesJS\\cli.js",
+            "G:\\Workspaces\\UtilitiesJS\\docs\\cli.js.html",
+            "G:\\Workspaces\\UtilitiesJS\\docs\\global_escape-regexp.js.html",
+            "G:\\Workspaces\\UtilitiesJS\\docs\\global_get-files-recursively.js.html",
+            "G:\\Workspaces\\UtilitiesJS\\docs\\index.js.html",
+            "G:\\Workspaces\\UtilitiesJS\\docs\\jsdoc-config-generator_generate-config.js.html",
+            "G:\\Workspaces\\UtilitiesJS\\docs\\scripts\\linenumber.js",
+            "G:\\Workspaces\\UtilitiesJS\\docs\\scripts\\prettify\\lang-css.js",
+            "G:\\Workspaces\\UtilitiesJS\\docs\\scripts\\prettify\\prettify.js",
+            "G:\\Workspaces\\UtilitiesJS\\global\\escape-regexp.js",
+            "G:\\Workspaces\\UtilitiesJS\\global\\get-files-recursively.js",
+            "G:\\Workspaces\\UtilitiesJS\\jsdoc-config-generator\\generate-config.js",
+            "G:\\Workspaces\\UtilitiesJS\\post-install.js"
         ],
         "includePattern": ".+\\.js(doc|x)?$",
         "excludePattern": "(^|\\/|\\\\)_"
