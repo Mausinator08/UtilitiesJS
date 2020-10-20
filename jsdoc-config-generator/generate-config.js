@@ -16,13 +16,15 @@ var conf = require("./conf-jsdoc.json");
  * @param {string} dir - string - the current dir being searched.
  * @param {string} [type="js"] - string - the file type to search for.
  * @param {string} confFile - string - the full file path to write conf-jsdoc.json to.
+ * @param {string} docsOut - string - the path to the directory the html documentation will live.
  * @return {Promise<string>} - promise<string> - returns whether successfull or error ocurred.
  */
-module.exports = async function (root, dir, type = "js", confFile) {
+module.exports = async function (root, dir, type = "js", confFile, docsOut) {
     return new Promise(async (resolve, reject) => {
         try {
             conf.source.include = [];
             conf.source.includePattern = conf.source.includePattern.replace(/{{type}}/g, type);
+            conf.opts.destination = conf.opts.destination.repleace(/{{docsOut}}/g, docsOut);
 
             var files = [];
             var files = await getFiles.recurse(root, dir, type);

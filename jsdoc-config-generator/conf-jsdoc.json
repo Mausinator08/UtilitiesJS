@@ -3,8 +3,8 @@
         "plugins/markdown"
     ],
     "opts": {
-        "recurse": true,
-        "destination": ".\\docs\\"
+        "recurse": false,
+        "destination": "{{docsOut}}"
     },
     "recurseDepth": 10,
     "source": {

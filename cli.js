@@ -29,6 +29,11 @@ const argv = yargs.command(
             description: "The path to write the resulting config file to.",
             alias: "c",
             type: "string"
+        },
+        docs_output: {
+            description: "The path to write the resulting documentation to.",
+            alias: "d",
+            type: "string"
         }
     }
 ).help().alias("help", "h").argv;
@@ -37,7 +42,7 @@ const argv = yargs.command(
 //#region Check which command is passed from command line
 /** jsdoc-config-generator */
 if (argv._.includes("generate_jsdoc_config") === true) {
-    configGen(argv.root, argv.root, argv.type, argv.config_file).then(val => {
+    configGen(argv.root, argv.root, argv.type, argv.config_file, argb.docs_output).then(val => {
         console.log(val);
         process.exit();
     }).catch(err => {
