@@ -24,7 +24,7 @@ module.exports = async function (root, dir, type = "js", confFile, docsOut) {
         try {
             conf.source.include = [];
             conf.source.includePattern = conf.source.includePattern.replace(/{{type}}/g, type);
-            conf.opts.destination = conf.opts.destination.repleace(/{{docsOut}}/g, docsOut);
+            conf.opts.destination = conf.opts.destination.replace(/{{docsOut}}/g, docsOut);
 
             var files = [];
             var files = await getFiles.recurse(root, dir, type);
