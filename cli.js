@@ -42,7 +42,7 @@ const argv = yargs.command(
 //#region Check which command is passed from command line
 /** jsdoc-config-generator */
 if (argv._.includes("generate_jsdoc_config") === true) {
-    configGen(argv.root, argv.root, argv.type, argv.config_file, argb.docs_output).then(val => {
+    configGen(argv.root, argv.root, argv.type, argv.config_file, argv.docs_output).then(val => {
         console.log(val);
         process.exit();
     }).catch(err => {
